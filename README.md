@@ -8,7 +8,6 @@ Technical test project implementing a local TYPO3 development environment with D
 - Docker Compose
 
 ## Setup
-
 1. Clone the repository:
 
    git clone https://github.com/simobenizii/typo3-technical-test.git
@@ -28,6 +27,7 @@ Technical test project implementing a local TYPO3 development environment with D
 
 5. Open TYPO3 and complete the local setup if required.
 
+
 ## URLs
 
 - TYPO3 Frontend: http://localhost:8080/
@@ -36,11 +36,17 @@ Technical test project implementing a local TYPO3 development environment with D
 
 ## Environment Configuration
 
-Local configuration is handled through environment variables.
+Copy `.env.example` to `.env` and adjust the values for your local environment.
 
-Copy `.env.example` to `.env` before starting the project.
+- `MYSQL_DATABASE` – MariaDB database name
+- `MYSQL_USER` – MariaDB user
+- `MYSQL_PASSWORD` – MariaDB user password
+- `MYSQL_ROOT_PASSWORD` – MariaDB root password
+- `TYPO3_ENCRYPTION_KEY` – TYPO3 encryption key (use a unique value locally)
+- `TYPO3_INSTALL_TOOL_PASSWORD` – TYPO3 Install Tool password hash
 
-The `.env` file is excluded from Git and should not be committed because it may contain local credentials or configuration values.
+The `.env` file contains local credentials and secrets and must not be committed to Git.
+Only `.env.example` with placeholder values is included in the repository.
 
 ## Docker Services
 
