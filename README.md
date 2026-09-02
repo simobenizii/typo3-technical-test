@@ -11,7 +11,7 @@ Technical test project implementing a local TYPO3 development environment with D
 
 1. Clone the repository:
 
-   git clone <repository-url>
+   git clone https://github.com/simobenizii/typo3-technical-test.git
    cd typo3-technical-test
 
 2. Create the environment file:
