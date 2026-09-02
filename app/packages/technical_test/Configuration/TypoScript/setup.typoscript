@@ -1,0 +1,20 @@
+tt_content.contact_box = FLUIDTEMPLATE
+tt_content.contact_box {
+    templateName = ContactBox
+    templateRootPaths {
+        10 = EXT:technical_test/Resources/Private/Templates/ContentElements/
+    }
+}
+page = PAGE
+page {
+    typeNum = 0
+
+    10 = CONTENT
+    10 {
+        table = tt_content
+        select {
+            orderBy = sorting
+            where = colPos=0
+        }
+    }
+}

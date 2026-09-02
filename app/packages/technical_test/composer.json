@@ -1,0 +1,18 @@
+{
+  "name": "technical-test/site-package",
+  "type": "typo3-cms-extension",
+  "description": "Site package for the TYPO3 technical test",
+  "require": {
+    "typo3/cms-core": "^13.4"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "technical_test"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "TechnicalTest\\SitePackage\\": "Classes/"
+    }
+  }
+}

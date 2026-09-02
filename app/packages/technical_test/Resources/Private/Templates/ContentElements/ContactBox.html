@@ -1,0 +1,23 @@
+<div class="contact-box">
+    <h2>{data.header}</h2>
+
+    <div>
+        <f:format.html>{data.bodytext}</f:format.html>
+    </div>
+
+    <f:if condition="{data.tx_technicaltest_email}">
+    <p>
+        Email:
+        <a href="mailto:{data.tx_technicaltest_email}">
+            {data.tx_technicaltest_email}
+        </a>
+    </p>
+</f:if>
+    <f:if condition="{data.header_link}">
+        <p>
+            <f:link.typolink parameter="{data.header_link}">
+                More information
+            </f:link.typolink>
+        </p>
+    </f:if>
+</div>
